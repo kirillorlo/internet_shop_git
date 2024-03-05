@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Мой интернет-магазин</title>
+    <title> Мой интернет-магазин </title>
     <!-- Здесь подключаете стили и скрипты -->
 </head>
 <body>
     <header>
         <!-- Здесь размещаете шапку -->
+        <h2> Магазин рок-одежды </h2>
     </header>
     <nav>
+        <button onclick="window.location.href='{{ url_for('clothing') }}'"> Одежда </button>
+
         <!-- Здесь размещаете меню -->
     </nav>
     <section>
+        <h3> Товары в наличии </h3>
         <!-- Здесь размещаете контент страницы -->
         {% block content %}
         {% endblock %}
     </section>
     <footer>
         <!-- Здесь размещаете подвал -->
+        <p> Подвал! Все права защищены!!! </p>
     </footer>
 </body>
 </html>

@@ -23,5 +23,9 @@ def jacket():
     return render_template('jacket.html')
 
 
+@app.route('/accessories')
+def accessories():
+    return render_template('accessories.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
